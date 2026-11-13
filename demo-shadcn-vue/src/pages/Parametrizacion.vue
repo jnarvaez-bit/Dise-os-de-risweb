@@ -49,7 +49,7 @@ function onGuardar() {
         </div>
         <Card>
             <CardContent class="pt-6">
-                <RwDataTable :datos="filas" :columnas="columnas" />
+                <RwDataTable :datos="filas" :columnas="columnas" vacio="No hay definiciones." />
             </CardContent>
         </Card>
 

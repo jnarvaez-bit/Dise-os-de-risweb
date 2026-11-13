@@ -29,14 +29,14 @@
         "nivel": "pantalla",
         "etiqueta": "Parámetros",
         "estado": "OK",
-        "efecto": "dom(229), navega /parametros"
+        "efecto": "dom(133), navega /parametros"
       },
       {
         "ruta": "/tablero",
         "nivel": "pantalla",
         "etiqueta": "Entidades",
         "estado": "OK",
-        "efecto": "dom(547), navega /entidades"
+        "efecto": "dom(216), navega /entidades"
       },
       {
         "ruta": "/tablero",
@@ -50,21 +50,21 @@
         "nivel": "pantalla",
         "etiqueta": "Reportes",
         "estado": "OK",
-        "efecto": "dom(491), navega /reportes"
+        "efecto": "dom(219), navega /reportes"
       },
       {
         "ruta": "/tablero",
         "nivel": "pantalla",
         "etiqueta": "Declaraciones",
         "estado": "OK",
-        "efecto": "dom(593), navega /declaraciones"
+        "efecto": "dom(257), navega /declaraciones"
       },
       {
         "ruta": "/tablero",
         "nivel": "pantalla",
         "etiqueta": "Parametrización",
         "estado": "OK",
-        "efecto": "dom(416), navega /parametrizacion"
+        "efecto": "dom(152), navega /parametrizacion"
       },
       {
         "ruta": "/tablero",
@@ -167,27 +167,34 @@
       {
         "ruta": "/parametros",
         "nivel": "pantalla",
-        "etiqueta": "Editar dias_alerta_corte",
+        "etiqueta": "Editar limites_colores",
         "estado": "OK",
-        "efecto": "dom(35), abre modal"
+        "efecto": "dom(40), abre modal"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Cerrar",
         "estado": "OK",
         "efecto": "dom(14)"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
+        "etiqueta": "Restaurar valores de ejemplo",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(14)"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(28)"
@@ -246,21 +253,21 @@
         "nivel": "pantalla",
         "etiqueta": "Código",
         "estado": "OK",
-        "efecto": "dom(15)"
+        "efecto": "dom(14)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Nombre",
         "estado": "OK",
-        "efecto": "dom(128)"
+        "efecto": "dom(14)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Tipo",
         "estado": "OK",
-        "efecto": "dom(15)"
+        "efecto": "dom(14)"
       },
       {
         "ruta": "/entidades",
@@ -302,7 +309,7 @@
         "nivel": "modal de «Editar Banco Ejemplo Uno S.A.»",
         "etiqueta": "Guardar",
         "estado": "OK",
-        "efecto": "dom(42)"
+        "efecto": "dom(41)"
       },
       {
         "ruta": "/entidades",
@@ -330,77 +337,77 @@
         "nivel": "modal de «Eliminar Banco Ejemplo Uno S.A.»",
         "etiqueta": "Eliminar",
         "estado": "OK",
-        "efecto": "dom(118)"
+        "efecto": "dom(45)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Editar Banco Ejemplo Dos S.A.",
+        "etiqueta": "Editar Cooperativa Ejemplo Alfa Ltda.",
         "estado": "OK",
         "efecto": "dom(49), abre modal"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Editar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "Cerrar",
         "estado": "OK",
         "efecto": "dom(19)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
-        "etiqueta": "Banco",
+        "nivel": "modal de «Editar Cooperativa Ejemplo Alfa Ltda.»",
+        "etiqueta": "Cooperativa",
         "estado": "OK",
         "efecto": "dom(28)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Editar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "p-toggleswitch-input",
         "estado": "OK",
         "efecto": "dom(7), cambia su estado"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Editar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(19)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Editar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "Guardar",
         "estado": "OK",
-        "efecto": "dom(42)"
+        "efecto": "dom(41)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Eliminar Banco Ejemplo Dos S.A.",
+        "etiqueta": "Eliminar Cooperativa Ejemplo Alfa Ltda.",
         "estado": "OK",
         "efecto": "dom(25), abre modal"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Eliminar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "Cerrar",
         "estado": "OK",
         "efecto": "dom(14)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Eliminar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(14)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar Banco Ejemplo Dos S.A.»",
+        "nivel": "modal de «Eliminar Cooperativa Ejemplo Alfa Ltda.»",
         "etiqueta": "Eliminar",
         "estado": "OK",
-        "efecto": "dom(112)"
+        "efecto": "dom(39)"
       },
       {
         "ruta": "/entidades",
@@ -424,30 +431,21 @@
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Página 2",
-        "estado": "OK",
-        "efecto": "dom(131)"
-      },
-      {
-        "ruta": "/entidades",
-        "nivel": "pantalla",
         "etiqueta": "Página siguiente",
-        "estado": "OK",
-        "efecto": "dom(132)"
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Última página",
-        "estado": "OK",
-        "efecto": "dom(132)"
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Filas por página",
         "estado": "OK",
-        "efecto": "dom(25)"
+        "efecto": "dom(24)"
       },
       {
         "ruta": "/reportes",
@@ -468,7 +466,7 @@
         "nivel": "pantalla",
         "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
         "estado": "OK",
-        "efecto": "dom(49)"
+        "efecto": "dom(37)"
       },
       {
         "ruta": "/reportes",
@@ -496,7 +494,7 @@
         "nivel": "modal de «Generar»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(85)"
+        "efecto": "dom(54)"
       },
       {
         "ruta": "/reportes",
@@ -517,28 +515,28 @@
         "nivel": "pantalla",
         "etiqueta": "Indicador",
         "estado": "OK",
-        "efecto": "dom(225)"
+        "efecto": "dom(15)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Valor",
         "estado": "OK",
-        "efecto": "dom(206)"
+        "efecto": "dom(31)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Límite",
         "estado": "OK",
-        "efecto": "dom(205)"
+        "efecto": "dom(31)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Estado",
         "estado": "OK",
-        "efecto": "dom(185)"
+        "efecto": "dom(15)"
       },
       {
         "ruta": "/declaraciones",
@@ -559,7 +557,7 @@
         "nivel": "pantalla",
         "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
         "estado": "OK",
-        "efecto": "dom(49)"
+        "efecto": "dom(37)"
       },
       {
         "ruta": "/declaraciones",
@@ -587,28 +585,28 @@
         "nivel": "modal de «Nueva declaración»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(124)"
+        "efecto": "dom(76)"
       },
       {
         "ruta": "/declaraciones",
         "nivel": "pantalla",
         "etiqueta": "Corte",
         "estado": "OK",
-        "efecto": "dom(160)"
+        "efecto": "dom(40)"
       },
       {
         "ruta": "/declaraciones",
         "nivel": "pantalla",
         "etiqueta": "Tipo",
         "estado": "OK",
-        "efecto": "dom(88)"
+        "efecto": "dom(12)"
       },
       {
         "ruta": "/declaraciones",
         "nivel": "pantalla",
         "etiqueta": "Consultar LIM007",
         "estado": "OK",
-        "efecto": "dom(256), abre modal"
+        "efecto": "dom(100), abre modal"
       },
       {
         "ruta": "/declaraciones",
@@ -657,7 +655,7 @@
         "nivel": "pantalla",
         "etiqueta": "Consultar LIM008",
         "estado": "OK",
-        "efecto": "dom(256), abre modal"
+        "efecto": "dom(100), abre modal"
       },
       {
         "ruta": "/declaraciones",
@@ -741,7 +739,7 @@
         "nivel": "pantalla",
         "etiqueta": "Código",
         "estado": "OK",
-        "efecto": "dom(70)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
@@ -781,34 +779,34 @@
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
-        "etiqueta": "Editar LIQ_SEGUNDA_LINEA",
+        "etiqueta": "Editar MOROSIDAD_TOTAL",
         "estado": "OK",
         "efecto": "dom(65), abre modal"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Cerrar",
         "estado": "OK",
         "efecto": "dom(19)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Mayor es mejor",
         "estado": "OK",
         "efecto": "dom(24)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(19)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(33)"
@@ -846,7 +844,7 @@
     "errores": [],
     "avisos": [],
     "ok": true,
-    "segundos": 264
+    "segundos": 260
   },
   {
     "demo": "demo-shadcn-vue",
@@ -976,21 +974,21 @@
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Clave",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(10)"
       },
       {
         "ruta": "/parametros",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Descripción",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(10)"
       },
       {
         "ruta": "/parametros",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Tipo",
         "estado": "OK",
-        "efecto": "dom(14)"
+        "efecto": "dom(10)"
       },
       {
         "ruta": "/parametros",
@@ -1023,27 +1021,34 @@
       {
         "ruta": "/parametros",
         "nivel": "pantalla",
-        "etiqueta": "Editar dias_alerta_corte",
+        "etiqueta": "Editar limites_colores",
         "estado": "OK",
         "efecto": "dom(11), abre modal"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
+        "etiqueta": "Restaurar valores de ejemplo",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(13)"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(27)"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Close",
         "estado": "OK",
         "efecto": "dom(13)"
@@ -1133,7 +1138,7 @@
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Nombre",
         "estado": "OK",
-        "efecto": "dom(16)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/entidades",
@@ -1147,7 +1152,7 @@
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Estado",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/entidades",
@@ -1210,46 +1215,46 @@
         "nivel": "modal de «Eliminar BEJ01»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(89)"
+        "efecto": "dom(35)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Editar BEJ02",
+        "etiqueta": "Editar CEJ01",
         "estado": "OK",
         "efecto": "dom(27), abre modal"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
-        "etiqueta": "Banco",
+        "nivel": "modal de «Editar CEJ01»",
+        "etiqueta": "Cooperativa",
         "estado": "OK",
         "efecto": "dom(21)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "Activo",
         "estado": "OK",
         "efecto": "cambia su estado"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(20)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(34)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "Close",
         "estado": "OK",
         "efecto": "dom(20)"
@@ -1257,23 +1262,23 @@
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Eliminar BEJ02",
+        "etiqueta": "Eliminar CEJ01",
         "estado": "OK",
         "efecto": "dom(11), abre modal"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar BEJ02»",
+        "nivel": "modal de «Eliminar CEJ01»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(13)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar BEJ02»",
+        "nivel": "modal de «Eliminar CEJ01»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(84)"
+        "efecto": "dom(29)"
       },
       {
         "ruta": "/entidades",
@@ -1291,15 +1296,13 @@
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Página siguiente",
-        "estado": "OK",
-        "efecto": "dom(20)"
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Última página",
-        "estado": "OK",
-        "efecto": "dom(20)"
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/reportes",
@@ -1334,7 +1337,7 @@
         "nivel": "modal de «Generar»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(60)"
+        "efecto": "dom(33)"
       },
       {
         "ruta": "/reportes",
@@ -1355,28 +1358,28 @@
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Indicador",
         "estado": "OK",
-        "efecto": "dom(28)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Valor",
         "estado": "OK",
-        "efecto": "dom(28)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Límite",
         "estado": "OK",
-        "efecto": "dom(28)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Estado",
         "estado": "OK",
-        "efecto": "dom(16)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/reportes",
@@ -1394,15 +1397,13 @@
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Página siguiente",
-        "estado": "OK",
-        "efecto": "dom(27)"
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Última página",
-        "estado": "OK",
-        "efecto": "dom(28)"
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/declaraciones",
@@ -1437,7 +1438,7 @@
         "nivel": "modal de «Nueva declaración»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(68)"
+        "efecto": "dom(38)"
       },
       {
         "ruta": "/declaraciones",
@@ -1451,14 +1452,14 @@
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Tipo",
         "estado": "OK",
-        "efecto": "dom(10)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/declaraciones",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Estado",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(10)"
       },
       {
         "ruta": "/declaraciones",
@@ -1622,42 +1623,42 @@
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Código",
         "estado": "OK",
-        "efecto": "dom(16)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Nombre",
         "estado": "OK",
-        "efecto": "dom(16)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por Sentido",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por L1",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por L2",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
         "etiqueta": "Ordenar por L3",
         "estado": "OK",
-        "efecto": "dom(12)"
+        "efecto": "dom(8)"
       },
       {
         "ruta": "/parametrizacion",
@@ -1697,34 +1698,34 @@
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
-        "etiqueta": "Editar LIQ_SEGUNDA_LINEA",
+        "etiqueta": "Editar MOROSIDAD_TOTAL",
         "estado": "OK",
         "efecto": "dom(25), abre modal"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Mayor es mejor",
         "estado": "OK",
         "efecto": "dom(21)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(20)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(34)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Close",
         "estado": "OK",
         "efecto": "dom(20)"
@@ -1772,7 +1773,7 @@
     "errores": [],
     "avisos": [],
     "ok": true,
-    "segundos": 254
+    "segundos": 249
   },
   {
     "demo": "demo-naiveui",
@@ -1860,7 +1861,7 @@
         "nivel": "pantalla",
         "etiqueta": "Modo oscuro",
         "estado": "OK",
-        "efecto": "dom(249)"
+        "efecto": "dom(189)"
       },
       {
         "ruta": "/tablero",
@@ -1935,30 +1936,37 @@
       {
         "ruta": "/parametros",
         "nivel": "pantalla",
-        "etiqueta": "Editar dias_alerta_corte",
+        "etiqueta": "Editar limites_colores",
         "estado": "OK",
         "efecto": "dom(25), abre modal"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "close",
         "estado": "OK",
-        "efecto": "dom(25)"
+        "efecto": "dom(27)"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
+        "etiqueta": "Restaurar valores de ejemplo",
+        "estado": "OK",
+        "efecto": "dom(22)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Cancelar",
         "estado": "OK",
-        "efecto": "dom(26)"
+        "efecto": "dom(28)"
       },
       {
         "ruta": "/parametros",
-        "nivel": "modal de «Editar dias_alerta_corte»",
+        "nivel": "modal de «Editar limites_colores»",
         "etiqueta": "Guardar",
         "estado": "OK",
-        "efecto": "dom(42)"
+        "efecto": "dom(44)"
       },
       {
         "ruta": "/entidades",
@@ -2014,21 +2022,21 @@
         "nivel": "pantalla",
         "etiqueta": "Código",
         "estado": "OK",
-        "efecto": "dom(44)"
+        "efecto": "dom(16)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Nombre",
         "estado": "OK",
-        "efecto": "dom(38)"
+        "efecto": "dom(16)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
         "etiqueta": "Tipo",
         "estado": "OK",
-        "efecto": "dom(32)"
+        "efecto": "dom(16)"
       },
       {
         "ruta": "/entidades",
@@ -2098,46 +2106,46 @@
         "nivel": "modal de «Eliminar BEJ01»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(59)"
+        "efecto": "dom(44)"
       },
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Editar BEJ02",
+        "etiqueta": "Editar CEJ01",
         "estado": "OK",
         "efecto": "dom(28), abre modal"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "close",
         "estado": "OK",
         "efecto": "dom(27)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
-        "etiqueta": "Banco",
+        "nivel": "modal de «Editar CEJ01»",
+        "etiqueta": "Cooperativa",
         "estado": "OK",
         "efecto": "dom(45)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "n-switch n-switch--active n-switch--round n-switch--rubber-band",
         "estado": "OK",
         "efecto": "dom(3), cambia su estado"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(28)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Editar BEJ02»",
+        "nivel": "modal de «Editar CEJ01»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(45)"
@@ -2145,30 +2153,30 @@
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "Eliminar BEJ02",
+        "etiqueta": "Eliminar CEJ01",
         "estado": "OK",
         "efecto": "dom(21), abre modal"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar BEJ02»",
+        "nivel": "modal de «Eliminar CEJ01»",
         "etiqueta": "close",
         "estado": "OK",
         "efecto": "dom(26)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar BEJ02»",
+        "nivel": "modal de «Eliminar CEJ01»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(26)"
       },
       {
         "ruta": "/entidades",
-        "nivel": "modal de «Eliminar BEJ02»",
+        "nivel": "modal de «Eliminar CEJ01»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(58)"
+        "efecto": "dom(49)"
       },
       {
         "ruta": "/entidades",
@@ -2186,23 +2194,15 @@
       {
         "ruta": "/entidades",
         "nivel": "pantalla",
-        "etiqueta": "2",
-        "estado": "OK",
-        "efecto": "dom(17)"
-      },
-      {
-        "ruta": "/entidades",
-        "nivel": "pantalla",
-        "etiqueta": "n-pagination-item n-pagination-item--button",
-        "estado": "OK",
-        "efecto": "dom(17)"
+        "etiqueta": "n-pagination-item n-pagination-item--button n-pagination-item--disable",
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
         "estado": "OK",
-        "efecto": "dom(54)"
+        "efecto": "dom(36)"
       },
       {
         "ruta": "/reportes",
@@ -2230,7 +2230,7 @@
         "nivel": "modal de «▶ Generar»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(113)"
+        "efecto": "dom(68)"
       },
       {
         "ruta": "/reportes",
@@ -2244,35 +2244,35 @@
         "nivel": "pantalla",
         "etiqueta": "Código",
         "estado": "OK",
-        "efecto": "dom(20)"
+        "efecto": "dom(16)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Indicador",
         "estado": "OK",
-        "efecto": "dom(19)"
+        "efecto": "dom(16)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Valor",
         "estado": "OK",
-        "efecto": "dom(20)"
+        "efecto": "dom(2)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Límite",
         "estado": "OK",
-        "efecto": "dom(20)"
+        "efecto": "dom(2)"
       },
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
         "etiqueta": "Estado",
         "estado": "OK",
-        "efecto": "dom(20)"
+        "efecto": "dom(2)"
       },
       {
         "ruta": "/reportes",
@@ -2290,65 +2290,8 @@
       {
         "ruta": "/reportes",
         "nivel": "pantalla",
-        "etiqueta": "2",
-        "estado": "OK",
-        "efecto": "dom(24)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "3",
-        "estado": "OK",
-        "efecto": "dom(24)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "4",
-        "estado": "OK",
-        "efecto": "dom(24)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "5",
-        "estado": "OK",
-        "efecto": "dom(24)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "6",
-        "estado": "OK",
-        "efecto": "dom(32)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "7",
-        "estado": "OK",
-        "efecto": "dom(34)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "n-pagination-item",
-        "estado": "OK",
-        "efecto": "dom(44)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "12",
-        "estado": "OK",
-        "efecto": "dom(43)"
-      },
-      {
-        "ruta": "/reportes",
-        "nivel": "pantalla",
-        "etiqueta": "n-pagination-item n-pagination-item--button",
-        "estado": "OK",
-        "efecto": "dom(25)"
+        "etiqueta": "n-pagination-item n-pagination-item--button n-pagination-item--disable",
+        "estado": "deshabilitado"
       },
       {
         "ruta": "/reportes",
@@ -2362,7 +2305,7 @@
         "nivel": "pantalla",
         "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
         "estado": "OK",
-        "efecto": "dom(54)"
+        "efecto": "dom(36)"
       },
       {
         "ruta": "/declaraciones",
@@ -2390,21 +2333,21 @@
         "nivel": "modal de «Nueva declaración»",
         "etiqueta": "Aceptar",
         "estado": "OK",
-        "efecto": "dom(51)"
+        "efecto": "dom(45)"
       },
       {
         "ruta": "/declaraciones",
         "nivel": "pantalla",
         "etiqueta": "Corte",
         "estado": "OK",
-        "efecto": "dom(8)"
+        "efecto": "dom(2)"
       },
       {
         "ruta": "/declaraciones",
         "nivel": "pantalla",
         "etiqueta": "Tipo",
         "estado": "OK",
-        "efecto": "dom(20)"
+        "efecto": "dom(14)"
       },
       {
         "ruta": "/declaraciones",
@@ -2563,7 +2506,7 @@
         "nivel": "pantalla",
         "etiqueta": "Código",
         "estado": "OK",
-        "efecto": "dom(36)"
+        "efecto": "dom(18)"
       },
       {
         "ruta": "/parametrizacion",
@@ -2603,34 +2546,34 @@
       {
         "ruta": "/parametrizacion",
         "nivel": "pantalla",
-        "etiqueta": "Editar LIQ_SEGUNDA_LINEA",
+        "etiqueta": "Editar MOROSIDAD_TOTAL",
         "estado": "OK",
         "efecto": "dom(30), abre modal"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "close",
         "estado": "OK",
         "efecto": "dom(29)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Mayor es mejor",
         "estado": "OK",
         "efecto": "dom(39)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Cancelar",
         "estado": "OK",
         "efecto": "dom(30)"
       },
       {
         "ruta": "/parametrizacion",
-        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "nivel": "modal de «Editar MOROSIDAD_TOTAL»",
         "etiqueta": "Guardar",
         "estado": "OK",
         "efecto": "dom(46)"
@@ -2668,6 +2611,6 @@
     "errores": [],
     "avisos": [],
     "ok": true,
-    "segundos": 273
+    "segundos": 248
   }
 ]

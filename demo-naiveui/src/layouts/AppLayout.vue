@@ -3,6 +3,7 @@ import { NButton, NLayout, NLayoutContent, NLayoutHeader, NLayoutSider, NMenu, t
 import { computed, inject, ref, type Ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { EMPRESA, MENU, type ItemMenu } from '@/datos/ejemplo';
+import { PIE_DEMO } from '@/libreria';
 
 const router = useRouter();
 const route = useRoute();
@@ -56,6 +57,7 @@ function alternar() {
             <NLayoutContent content-class="p-4 md:p-6">
                 <slot />
             </NLayoutContent>
+            <footer class="border-t px-4 py-2 text-xs opacity-70">{{ PIE_DEMO }}</footer>
         </NLayout>
     </NLayout>
 </template>

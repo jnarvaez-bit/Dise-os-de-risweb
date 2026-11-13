@@ -31,7 +31,7 @@ npm run build
 ## Qué faltó / notas
 - «Excel» descarga un CSV de ejemplo (en RiskWeb el Excel real lo hace el backend).
 - Se importa componente por componente; no se usó `unplugin-vue-components`.
-- No se configuró nonce de CSP (en RiskWeb: `csp: { nonce }` + `Vite::useCspNonce()`).
+- CSP en el build: default-src self; Naive UI (y los estilos inyectados) requieren style-src unsafe-inline.
 
 ## Botones
 Todos los botones hacen algo visible: abren modal, muestran aviso «Ejemplo: no se guardan datos», descargan un CSV de ejemplo o navegan. «Cerrar sesión» vuelve al login. Nada se guarda: al recargar vuelven los datos de ejemplo. Prueba automática: `../scripts/test-botones.mjs` (ver README raíz).

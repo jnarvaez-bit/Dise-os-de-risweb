@@ -21,17 +21,7 @@ export interface Entidad {
 function entidadesEjemplo(): Entidad[] {
     const base = [
         ['BEJ01', 'Banco Ejemplo Uno S.A.', 'Banco'],
-        ['BEJ02', 'Banco Ejemplo Dos S.A.', 'Banco'],
-        ['BEJ03', 'Banco Ficticio del Sur S.A.', 'Banco'],
         ['CEJ01', 'Cooperativa Ejemplo Alfa Ltda.', 'Cooperativa'],
-        ['CEJ02', 'Cooperativa Ejemplo Beta Ltda.', 'Cooperativa'],
-        ['CEJ03', 'Cooperativa Ficticia Gamma Ltda.', 'Cooperativa'],
-        ['CEJ04', 'Cooperativa Ficticia Delta Ltda.', 'Cooperativa'],
-        ['MEJ01', 'Mutualista Ejemplo Norte', 'Mutualista'],
-        ['MEJ02', 'Mutualista Ejemplo Centro', 'Mutualista'],
-        ['OEJ01', 'Fondo Ficticio de Inversión', 'Otra'],
-        ['OEJ02', 'Casa de Valores Ejemplo S.A.', 'Otra'],
-        ['OEJ03', 'Emisor Ficticio Corporativo S.A.', 'Otra'],
     ];
     return base.map(([codigo, nombre, tipo], i) => ({
         id: i + 1,
@@ -124,10 +114,7 @@ export function useParametros() {
     const coloresJson = () => JSON.stringify({ rojo: COLORES.rojo, amarillo: COLORES.amarillo, verde: COLORES.verde });
     const filas = ref<Parametro[]>([
         { id: 1, clave: 'param_limites', descripcion: 'Tipo de parametrización de límites (ejemplo)', valor: 'Ris', tipo: 'texto' },
-        { id: 2, clave: 'dias_alerta_corte', descripcion: 'Días de alerta antes del corte (ejemplo)', valor: '5', tipo: 'numero' },
-        { id: 3, clave: 'moneda', descripcion: 'Moneda de los reportes (ejemplo)', valor: 'USD', tipo: 'texto' },
-        { id: 4, clave: 'tolerancia_redondeo', descripcion: 'Tolerancia de redondeo (ejemplo)', valor: '0.01', tipo: 'numero' },
-        { id: 5, clave: 'limites_colores', descripcion: 'Colores del semáforo L1/L2/L3 (ejemplo)', valor: coloresJson(), tipo: 'colores' },
+        { id: 2, clave: 'limites_colores', descripcion: 'Colores del semáforo L1/L2/L3 (ejemplo)', valor: coloresJson(), tipo: 'colores' },
     ]);
     // Editor simple
     const abierto = ref(false);
@@ -210,7 +197,7 @@ export function validarDefinicion(f: Omit<Definicion, 'id'>): Errores {
 }
 
 export function useDefiniciones() {
-    const nombres = ['LIQ_PRIMERA_LINEA', 'LIQ_SEGUNDA_LINEA', 'CONC_DEPOSITOS', 'CONC_CARTERA', 'MOROSIDAD_TOTAL', 'SOLVENCIA', 'COBERTURA', 'INV_EMISOR'];
+    const nombres = ['LIQ_PRIMERA_LINEA', 'MOROSIDAD_TOTAL'];
     const filas = ref<Definicion[]>(
         nombres.map((codigo, i) => {
             const mayor = i % 3 !== 2;
@@ -267,17 +254,17 @@ export interface Declaracion {
 
 export function useDeclaraciones() {
     const filas = ref<Declaracion[]>(
-        Array.from({ length: 8 }, (_, i) => ({
+        Array.from({ length: 2 }, (_, i) => ({
             id: i + 1,
             corte: new Date(2026, 10 - i, 0),
             tipo: TIPOS_REPORTE[i % TIPOS_REPORTE.length].value,
-            estado: i < 2 ? 'Generada' : 'Enviada',
+            estado: i === 0 ? 'Generada' : 'Enviada',
             usuario: 'usuario.ejemplo',
         })),
     );
     const detalleAbierto = ref(false);
     const actual = ref<Declaracion | null>(null);
-    const detalle = computed(() => (actual.value ? generarFilas(8, actual.value.id + 11) : []));
+    const detalle = computed(() => (actual.value ? generarFilas(2, actual.value.id + 11) : []));
     function consultar(d: Declaracion) {
         actual.value = d;
         detalleAbierto.value = true;

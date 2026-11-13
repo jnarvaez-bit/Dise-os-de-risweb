@@ -34,7 +34,7 @@ const columnas: ColumnDef<FilaReporte, any>[] = [
 ];
 
 function generar() {
-    filas.value = generarFilas(120, (corte.value?.getMonth() ?? 0) + 3);
+    filas.value = generarFilas(2, (corte.value?.getMonth() ?? 0) + 3);
     toast.success('Reporte generado', { description: 'Datos de ejemplo' });
 }
 function exportar() {

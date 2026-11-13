@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { EMPRESA } from '@/datos/ejemplo';
+import { PIE_DEMO } from '@/libreria';
 
 const route = useRoute();
 const router = useRouter();
@@ -57,7 +58,7 @@ function ingresar() {
                     </div>
                 </div>
                 <Button type="submit" class="w-full"><LogIn class="mr-2 h-4 w-4" />Ingresar</Button>
-                <p class="text-center text-xs text-muted-foreground">Demo con datos de ejemplo · clave: demo</p>
+                <p class="text-center text-xs text-muted-foreground">Demo con datos de ejemplo · clave: demo<br />{{ PIE_DEMO }}</p>
             </form>
         </div>
     </div>

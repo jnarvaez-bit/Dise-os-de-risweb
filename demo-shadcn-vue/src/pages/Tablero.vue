@@ -16,7 +16,7 @@ const nivel: Record<Estado, string> = { verde: 'L1 · dentro del límite', amari
             <h1 class="text-2xl font-bold">Tablero de límites</h1>
             <Rotulo />
         </div>
-        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
             <Card v-for="k in KPIS" :key="k.nombre">
                 <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle class="text-base">{{ k.nombre }}</CardTitle>

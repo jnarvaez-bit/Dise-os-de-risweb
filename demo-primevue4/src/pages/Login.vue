@@ -6,6 +6,7 @@ import Password from 'primevue/password';
 import { computed, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { EMPRESA } from '@/datos/ejemplo';
+import { PIE_DEMO } from '@/libreria';
 
 const route = useRoute();
 const router = useRouter();
@@ -51,7 +52,7 @@ function ingresar() {
                     <Password v-model="clave" input-id="clave" :feedback="false" toggle-mask autocomplete="current-password" fluid />
                 </div>
                 <Button type="submit" label="Ingresar" icon="pi pi-sign-in" class="w-full" />
-                <p class="text-center text-xs text-muted-color">Demo con datos de ejemplo · clave: demo</p>
+                <p class="text-center text-xs text-muted-color">Demo con datos de ejemplo · clave: demo<br />{{ PIE_DEMO }}</p>
             </form>
         </div>
     </div>

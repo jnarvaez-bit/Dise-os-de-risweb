@@ -5,6 +5,7 @@ import type { MenuItem } from 'primevue/menuitem';
 import { computed, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { EMPRESA, MENU, type ItemMenu } from '@/datos/ejemplo';
+import { PIE_DEMO } from '@/libreria';
 import { alternarOscuro } from '@/utils/formato';
 
 const router = useRouter();
@@ -59,6 +60,7 @@ const expandidas = ref<Record<string, boolean>>({ '1': true, '2': true, '3': tru
             <main class="flex-1 p-4 md:p-6">
                 <slot />
             </main>
+            <footer class="border-t border-surface-200 px-4 py-2 text-xs text-muted-color dark:border-surface-800">{{ PIE_DEMO }}</footer>
         </div>
     </div>
 </template>

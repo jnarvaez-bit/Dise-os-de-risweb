@@ -30,6 +30,7 @@ function onGuardar() {
         <Card>
             <template #content>
                 <DataTable :value="filas" size="small" data-key="id" striped-rows>
+                    <template #empty>No hay definiciones.</template>
                     <template #header>
                         <div class="flex items-center justify-between">
                             <span class="font-semibold">Umbrales por indicador (ejemplo)</span>

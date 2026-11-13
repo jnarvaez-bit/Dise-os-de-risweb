@@ -3,6 +3,7 @@ import { NAlert, NButton, NFormItem, NInput } from 'naive-ui';
 import { computed, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { EMPRESA } from '@/datos/ejemplo';
+import { PIE_DEMO } from '@/libreria';
 
 const route = useRoute();
 const router = useRouter();
@@ -45,7 +46,7 @@ function ingresar() {
                     <NInput v-model:value="clave" type="password" show-password-on="click" :input-props="{ autocomplete: 'current-password', id: 'clave' }" placeholder="" />
                 </NFormItem>
                 <NButton attr-type="submit" type="primary" block>Ingresar</NButton>
-                <p class="text-center text-xs text-slate-500">Demo con datos de ejemplo · clave: demo</p>
+                <p class="text-center text-xs text-slate-500">Demo con datos de ejemplo · clave: demo<br />{{ PIE_DEMO }}</p>
             </form>
         </div>
     </div>

@@ -63,7 +63,7 @@ function onGuardarColores() {
         </Card>
         <Card>
             <CardContent class="pt-6">
-                <RwDataTable :datos="filas" :columnas="columnas" />
+                <RwDataTable :datos="filas" :columnas="columnas" vacio="No hay parámetros." />
             </CardContent>
         </Card>
 

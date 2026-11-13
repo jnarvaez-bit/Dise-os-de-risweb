@@ -32,7 +32,7 @@ function generar() {
         accept: () => {
             cargando.value = true;
             setTimeout(() => {
-                filas.value = generarFilas(120, (corte.value?.getMonth() ?? 0) + 3);
+                filas.value = generarFilas(2, (corte.value?.getMonth() ?? 0) + 3);
                 cargando.value = false;
                 toast.add({ severity: 'success', summary: 'Reporte generado', detail: 'Datos de ejemplo', life: 3000 });
             }, 400);

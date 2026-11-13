@@ -36,7 +36,7 @@ function generar() {
         onPositiveClick: () => {
             cargando.value = true;
             setTimeout(() => {
-                filas.value = generarFilas(120, new Date(corte.value ?? 0).getMonth() + 3);
+                filas.value = generarFilas(2, new Date(corte.value ?? 0).getMonth() + 3);
                 cargando.value = false;
                 message.success('Reporte generado (datos de ejemplo)');
             }, 400);

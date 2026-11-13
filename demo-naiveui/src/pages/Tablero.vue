@@ -15,7 +15,7 @@ const nivel: Record<Estado, string> = { verde: 'L1 · dentro del límite', amari
             <h1 class="text-2xl font-bold">Tablero de límites</h1>
             <Rotulo />
         </div>
-        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
             <NCard v-for="k in KPIS" :key="k.nombre" :title="k.nombre" size="small">
                 <template #header-extra><SemaforoBadge :estado="k.estado" /></template>
                 <p class="text-3xl font-bold">{{ fmtPorcentaje(k.valor) }}</p>

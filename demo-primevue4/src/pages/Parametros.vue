@@ -49,6 +49,7 @@ function onGuardarColores() {
         <Card>
             <template #content>
                 <DataTable :value="filas" size="small" data-key="id">
+                    <template #empty>No hay parámetros.</template>
                     <Column field="clave" header="Clave" />
                     <Column field="descripcion" header="Descripción" />
                     <Column field="valor" header="Valor">

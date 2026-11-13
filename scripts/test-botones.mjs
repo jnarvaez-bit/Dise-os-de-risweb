@@ -7,7 +7,7 @@
 // Uso: node test-botones.mjs [demo...]      Resultado: docs/prueba-botones.md y docs/prueba-botones.json
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { abrirNavegador, DEMOS, levantar, RAIZ, RUTAS } from './comun.mjs';
+import { abrirNavegador, DEMOS, levantar, RAIZ, RUTAS, urlHash } from './comun.mjs';
 
 const CLICABLES = [
     'button', 'a[href]', '[role=button]', '[role=menuitem]', '[role=treeitem]', '[role=tab]', '[role=combobox]', '[role=switch]',
@@ -87,7 +87,7 @@ async function probarDemo(nav, demo, puerto) {
     pag.on('filechooser', () => selectores++);
 
     const fresco = async (ruta) => {
-        await pag.goto(`${srv.url}/#${ruta}`);
+        await pag.goto(urlHash(srv.url, ruta));
         await pag.reload({ waitUntil: 'networkidle' });
         await pag.waitForTimeout(350);
         for (const inp of await pag.locator('input[type=file]').all()) {

@@ -32,7 +32,9 @@ function onGuardar() {
             <NButton type="primary" class="ml-auto" @click="nuevo">Nueva definición</NButton>
         </div>
         <NCard size="small">
-            <NDataTable :columns="columnas" :data="filas" :row-key="(r: Definicion) => r.id" size="small" striped :scroll-x="900" />
+            <NDataTable :columns="columnas" :data="filas" :row-key="(r: Definicion) => r.id" size="small" striped :scroll-x="900">
+                <template #empty>No hay definiciones.</template>
+            </NDataTable>
         </NCard>
 
         <NModal v-model:show="abierto" preset="card" :title="editandoId === null ? 'Nueva definición' : 'Editar definición'" style="width: 34rem" :mask-closable="false">

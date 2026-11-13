@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es-EC">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
+        />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="icon" href="data:," />
+        <title>Demos de diseño RiskWeb (datos ficticios)</title>
+        <style>
+            :root {
+                color-scheme: light;
+                --bg: #f8fafc;
+                --ink: #0f172a;
+                --muted: #475569;
+                --card: #ffffff;
+                --line: #e2e8f0;
+                --accent: #0f766e;
+                --accent-2: #0e7490;
+            }
+            * { box-sizing: border-box; }
+            body {
+                margin: 0;
+                font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+                background: var(--bg);
+                color: var(--ink);
+                line-height: 1.5;
+            }
+            header {
+                background: linear-gradient(135deg, #047857, #0f766e 45%, #0e7490);
+                color: #fff;
+                padding: 3rem 1.5rem 2.5rem;
+            }
+            header, main, footer { max-width: none; }
+            .wrap { max-width: 56rem; margin: 0 auto; }
+            h1 { margin: 0 0 0.5rem; font-size: 2rem; }
+            .aviso {
+                display: inline-block;
+                margin-top: 0.75rem;
+                padding: 0.35rem 0.7rem;
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.18);
+                font-size: 0.9rem;
+            }
+            main { padding: 2rem 1.5rem 3rem; }
+            .grid { display: grid; gap: 1rem; }
+            @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+            a.card {
+                display: block;
+                background: var(--card);
+                border: 1px solid var(--line);
+                border-radius: 0.85rem;
+                padding: 1.25rem;
+                color: inherit;
+                text-decoration: none;
+                box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+            }
+            a.card:hover, a.card:focus {
+                border-color: var(--accent);
+                outline: 2px solid var(--accent);
+                outline-offset: 2px;
+            }
+            a.card h2 { margin: 0 0 0.35rem; font-size: 1.15rem; color: var(--accent); }
+            a.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+            .nota {
+                margin-top: 2rem;
+                padding: 1rem 1.15rem;
+                background: #ecfeff;
+                border: 1px solid #a5f3fc;
+                border-radius: 0.75rem;
+                color: #155e75;
+            }
+            footer {
+                border-top: 1px solid var(--line);
+                padding: 1rem 1.5rem 2rem;
+                color: var(--muted);
+                font-size: 0.85rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <h1>Demos de diseño RiskWeb</h1>
+                <p>Tres prototipos independientes para comparar librerías de interfaz. Todos los datos son ficticios y están rotulados «Dato de ejemplo».</p>
+                <p class="aviso">Esto no es el sistema de producción. No se conecta a ninguna base de datos ni entorno real.</p>
+            </div>
+        </header>
+        <main>
+            <div class="wrap">
+                <div class="grid">
+                    <a class="card" href="demo-primevue4/#/login?expirada=1">
+                        <h2>PrimeVue 4.5.5</h2>
+                        <p>Opción base (MIT). Entre con cualquier usuario y la clave <strong>demo</strong>.</p>
+                    </a>
+                    <a class="card" href="demo-shadcn-vue/#/login?expirada=1">
+                        <h2>shadcn-vue 1.0.3</h2>
+                        <p>Complemento con reka-ui. Misma clave de ejemplo: <strong>demo</strong>.</p>
+                    </a>
+                    <a class="card" href="demo-naiveui/#/login?expirada=1">
+                        <h2>Naive UI 2.45.3</h2>
+                        <p>Solo para comparar. Misma clave de ejemplo: <strong>demo</strong>.</p>
+                    </a>
+                </div>
+                <div class="nota">
+                    Cada demo tiene 2 filas de ejemplo por tabla. Nada se guarda: al recargar vuelven los datos de ejemplo.
+                    Clave de acceso de la demostración: <strong>demo</strong>.
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="wrap">Datos ficticios · no es el sistema de producción · licencia MIT</div>
+        </footer>
+    </body>
+</html>

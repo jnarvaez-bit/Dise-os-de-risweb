@@ -35,12 +35,6 @@ export const TEXTO_ESTADO: Record<Estado, string> = {
 export const TIPOS_REPORTE = [
     { label: 'LIM007 · Liquidez estructural (ejemplo)', value: 'LIM007' },
     { label: 'LIM008 · Concentración de depósitos (ejemplo)', value: 'LIM008' },
-    { label: 'LIM009 · Concentración de cartera (ejemplo)', value: 'LIM009' },
-    { label: 'LIM010 · Solvencia (ejemplo)', value: 'LIM010' },
-    { label: 'LIM011 · Morosidad (ejemplo)', value: 'LIM011' },
-    { label: 'LIM012 · Inversiones por emisor (ejemplo)', value: 'LIM012' },
-    { label: 'LIM013 · Brechas de liquidez (ejemplo)', value: 'LIM013' },
-    { label: 'LIF · Límites internos de inversión (ejemplo)', value: 'LIF' },
 ];
 
 const NOMBRES = [
@@ -75,7 +69,7 @@ function calcularEstado(valor: number | null, limite: number, sentido: FilaRepor
     return 'rojo';
 }
 
-export function generarFilas(cantidad = 120, semilla = 7): FilaReporte[] {
+export function generarFilas(cantidad = 2, semilla = 7): FilaReporte[] {
     const r = aleatorio(semilla);
     return Array.from({ length: cantidad }, (_, i) => {
         const sentido: FilaReporte['sentido'] = i % 3 === 0 ? 'menor_mejor' : 'mayor_mejor';
@@ -102,9 +96,7 @@ export interface Kpi {
 
 export const KPIS: Kpi[] = [
     { nombre: 'Liquidez', valor: 24.35, variacion: 1.2, estado: 'verde' },
-    { nombre: 'Solvencia', valor: 13.8, variacion: -0.4, estado: 'amarillo' },
     { nombre: 'Morosidad', valor: 6.91, variacion: 0.85, estado: 'rojo' },
-    { nombre: 'Concentración', valor: 18.02, variacion: 0, estado: 'gris' },
 ];
 
 export interface ItemMenu {

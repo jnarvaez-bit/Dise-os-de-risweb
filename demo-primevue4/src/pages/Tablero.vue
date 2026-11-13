@@ -14,7 +14,7 @@ const estados: Estado[] = ['verde', 'amarillo', 'rojo', 'gris'];
             <h1 class="text-2xl font-bold">Tablero de límites</h1>
             <Rotulo />
         </div>
-        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-2">
             <Card v-for="k in KPIS" :key="k.nombre">
                 <template #title>
                     <div class="flex items-center justify-between text-base">

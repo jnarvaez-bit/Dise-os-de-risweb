@@ -8,6 +8,7 @@ import {
     SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarProvider, SidebarTrigger,
 } from '@/components/ui/sidebar';
 import { EMPRESA, MENU } from '@/datos/ejemplo';
+import { PIE_DEMO } from '@/libreria';
 import { alternarOscuro } from '@/utils/formato';
 
 const route = useRoute();
@@ -58,6 +59,7 @@ const oscuro = ref(false);
             <main class="flex-1 p-4 md:p-6">
                 <slot />
             </main>
+            <footer class="border-t px-4 py-2 text-xs text-muted-foreground">{{ PIE_DEMO }}</footer>
         </SidebarInset>
     </SidebarProvider>
 </template>

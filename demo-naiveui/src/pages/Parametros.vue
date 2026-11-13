@@ -47,7 +47,9 @@ function onGuardarColores() {
             </div>
         </NCard>
         <NCard size="small">
-            <NDataTable :columns="columnas" :data="filas" :row-key="(r: Parametro) => r.id" size="small" striped />
+            <NDataTable :columns="columnas" :data="filas" :row-key="(r: Parametro) => r.id" size="small" striped>
+                <template #empty>No hay parámetros.</template>
+            </NDataTable>
         </NCard>
 
         <NModal v-model:show="abierto" preset="card" :title="`Editar parámetro: ${actual?.clave ?? ''}`" style="width: 28rem" :mask-closable="false">
