@@ -844,7 +844,7 @@
     "errores": [],
     "avisos": [],
     "ok": true,
-    "segundos": 260
+    "segundos": 259
   },
   {
     "demo": "demo-shadcn-vue",
@@ -1773,7 +1773,7 @@
     "errores": [],
     "avisos": [],
     "ok": true,
-    "segundos": 249
+    "segundos": 248
   },
   {
     "demo": "demo-naiveui",
@@ -2611,6 +2611,6 @@
     "errores": [],
     "avisos": [],
     "ok": true,
-    "segundos": 248
+    "segundos": 246
   }
 ]

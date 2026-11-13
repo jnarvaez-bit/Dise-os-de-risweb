@@ -82,7 +82,7 @@ Resultado local (13/11/2026, 13:24 hora de Ecuador) — detalle en `docs/prueba-
 | shadcn-vue | ✅ PASA | 8 | 113 | 0 | 20 | 0 |
 | Naive UI | ✅ PASA | 8 | 109 | 0 | 6 | 0 |
 
-Las 8 rutas de cada demo también pasaron en vista previa local (URL directa + F5, HTTP 200, 0 errores de consola, 0 HTTP 404).
+Las 8 rutas de cada demo también pasaron en vista previa local y en las URLs publicadas (URL directa + F5, HTTP 200, 0 errores de consola, 0 HTTP 404). La prueba de botones contra GitHub Pages, el 13/11/2026 a las 13:41 (hora de Ecuador), dio el mismo resultado: las 3 demos ✅ PASA, 0 fallas y 0 errores de consola.
 
 \* Deshabilitados a propósito (por ejemplo «Página anterior» en la página 1, o paginación con solo 2 filas).
 

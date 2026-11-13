@@ -1,6 +1,6 @@
 # Resultado de la prueba de botones
 
-Fecha: 13/11/2026, 1:24:30 p. m. (hora de Ecuador). Script: `scripts/test-botones.mjs`.
+Fecha: 13/11/2026, 1:41:50 p. m. (hora de Ecuador). Script: `scripts/test-botones.mjs`.
 
 | Demo | Resultado | Rutas | Clics OK | Fallas | Deshabilitados | Errores consola | Avisos consola |
 |---|---|---|---|---|---|---|---|

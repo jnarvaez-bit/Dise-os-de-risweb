@@ -7,7 +7,7 @@
 // Uso: node test-botones.mjs [demo...]      Resultado: docs/prueba-botones.md y docs/prueba-botones.json
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { abrirNavegador, DEMOS, levantar, RAIZ, RUTAS, urlHash } from './comun.mjs';
+import { abrirNavegador, DEMOS, levantar, RAIZ, RUTAS, urlHash, urlPublica } from './comun.mjs';
 
 const CLICABLES = [
     'button', 'a[href]', '[role=button]', '[role=menuitem]', '[role=treeitem]', '[role=tab]', '[role=combobox]', '[role=switch]',
@@ -74,8 +74,8 @@ function iniciarObservador(i) {
     window.__obs.observe(document.documentElement, { subtree: true, childList: true, attributes: true, characterData: true });
 }
 
-async function probarDemo(nav, demo, puerto) {
-    const srv = await levantar(demo, puerto);
+async function probarDemo(nav, demo, puerto, origenFijo = null) {
+    const srv = origenFijo ? { url: origenFijo, cerrar: () => {} } : await levantar(demo, puerto);
     const ctx = await nav.newContext({ viewport: { width: 1366, height: 900 }, acceptDownloads: true });
     const pag = await ctx.newPage();
     const consola = [];
@@ -192,13 +192,15 @@ async function probarDemo(nav, demo, puerto) {
     return { demo, rutas: RUTAS.length, resultados, fallas, errores, avisos, ok: fallas.length === 0 && errores.length === 0 };
 }
 
-const demos = process.argv.slice(2).length ? process.argv.slice(2) : DEMOS;
+const args = process.argv.slice(2).filter((a) => a !== '--publicado');
+const publicado = process.argv.includes('--publicado');
+const demos = args.length ? args : DEMOS;
 const nav = await abrirNavegador();
 const todos = [];
 let puerto = 4501;
 for (const demo of demos) {
     const t0 = Date.now();
-    const r = await probarDemo(nav, demo, puerto++);
+    const r = await probarDemo(nav, demo, puerto++, publicado ? urlPublica(demo) : null);
     r.segundos = Math.round((Date.now() - t0) / 1000);
     todos.push(r);
     const n = (e) => r.resultados.filter((x) => x.estado === e).length;
@@ -209,7 +211,7 @@ for (const demo of demos) {
 await nav.close();
 // Si se probaron solo algunos demos, se conservan los resultados anteriores de los demás.
 const previo = join(RAIZ, 'docs', 'prueba-botones.json');
-if (process.argv.slice(2).length && existsSync(previo)) {
+if (args.length && existsSync(previo)) {
     for (const viejo of JSON.parse(readFileSync(previo, 'utf8'))) if (!todos.some((t) => t.demo === viejo.demo)) todos.push(viejo);
     todos.sort((a, b) => DEMOS.indexOf(a.demo) - DEMOS.indexOf(b.demo));
 }
