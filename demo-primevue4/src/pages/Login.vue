@@ -16,6 +16,10 @@ const expirada = computed(() => route.query.expirada === '1');
 
 function ingresar() {
     // Demo: cualquier usuario con clave "demo" entra; si no, muestra el error de ejemplo.
+    if (!usuario.value.trim() || !clave.value) {
+        error.value = 'Ingrese usuario y contraseña.';
+        return;
+    }
     if (clave.value !== 'demo') {
         error.value = 'Usuario o contraseña incorrectos (mensaje de ejemplo).';
         return;
@@ -31,7 +35,7 @@ function ingresar() {
             <p class="mt-2 max-w-sm text-white/90">Gestión de riesgos para cooperativas. Imagen genérica de ejemplo.</p>
         </div>
         <div class="flex items-center justify-center p-6">
-            <form class="w-full max-w-sm space-y-5" @submit.prevent="ingresar">
+            <form class="w-full max-w-sm space-y-5" novalidate @submit.prevent="ingresar">
                 <div>
                     <h1 class="text-2xl font-bold">Iniciar sesión</h1>
                     <p class="text-sm text-muted-color">{{ EMPRESA }}</p>
@@ -40,11 +44,11 @@ function ingresar() {
                 <Message v-if="error" severity="error">{{ error }}</Message>
                 <div class="flex flex-col gap-1">
                     <label for="usuario" class="text-sm font-medium">Usuario</label>
-                    <InputText id="usuario" v-model="usuario" autocomplete="username" required fluid />
+                    <InputText id="usuario" v-model="usuario" autocomplete="username" fluid />
                 </div>
                 <div class="flex flex-col gap-1">
                     <label for="clave" class="text-sm font-medium">Contraseña</label>
-                    <Password v-model="clave" input-id="clave" :feedback="false" toggle-mask autocomplete="current-password" required fluid />
+                    <Password v-model="clave" input-id="clave" :feedback="false" toggle-mask autocomplete="current-password" fluid />
                 </div>
                 <Button type="submit" label="Ingresar" icon="pi pi-sign-in" class="w-full" />
                 <p class="text-center text-xs text-muted-color">Demo con datos de ejemplo · clave: demo</p>

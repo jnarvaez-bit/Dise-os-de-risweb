@@ -1,4 +1,6 @@
 // DATOS FICTICIOS DE EJEMPLO. No provienen de ninguna cooperativa ni de RiskWeb.
+import { reactive } from 'vue';
+
 export type Estado = 'verde' | 'amarillo' | 'rojo' | 'gris';
 
 export interface FilaReporte {
@@ -15,12 +17,13 @@ export const EMPRESA = 'COOPERATIVA DE EJEMPLO';
 export const ROTULO = 'Dato de ejemplo';
 
 // Colores de ejemplo (mismo formato que limites_colores) + gris para "Sin dato".
-export const COLORES: Record<Estado, string> = {
+// Reactivo: si se editan en Parámetros › Límites colores, cambia el semáforo en todo el demo.
+export const COLORES: Record<Estado, string> = reactive({
     verde: '#C6E0B4',
     amarillo: '#FFFF99',
     rojo: '#FF7C80',
     gris: '#E5E7EB',
-};
+});
 
 export const TEXTO_ESTADO: Record<Estado, string> = {
     verde: 'Cumple',
@@ -115,16 +118,16 @@ export const MENU: ItemMenu[] = [
     {
         label: 'Administración',
         hijos: [
-            { label: 'Parámetros', to: '/tablero' },
-            { label: 'Entidades', to: '/tablero' },
+            { label: 'Parámetros', to: '/parametros' },
+            { label: 'Entidades', to: '/entidades' },
         ],
     },
     {
         label: 'Límites',
         hijos: [
             { label: 'Reportes', to: '/reportes' },
-            { label: 'Declaraciones', to: '/reportes' },
-            { label: 'Parametrización', to: '/tablero' },
+            { label: 'Declaraciones', to: '/declaraciones' },
+            { label: 'Parametrización', to: '/parametrizacion' },
         ],
     },
     { label: 'Tesorería', hijos: [{ label: 'Cargar insumos', to: '/cargar-insumos' }] },

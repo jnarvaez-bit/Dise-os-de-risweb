@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router';
 import Rotulo from '@/components/Rotulo.vue';
 import SemaforoBadge from '@/components/SemaforoBadge.vue';
 import { generarFilas, TIPOS_REPORTE, type FilaReporte } from '@/datos/ejemplo';
-import { fmtFecha, fmtPorcentaje, ultimoDiaMesAnterior } from '@/utils/formato';
+import { descargarCsv, fmtFecha, fmtPorcentaje, ultimoDiaMesAnterior } from '@/utils/formato';
 
 const route = useRoute();
 const dialog = useDialog();
@@ -45,7 +45,8 @@ function generar() {
     });
 }
 function exportar() {
-    message.info('Exportación de ejemplo: en RiskWeb el Excel lo genera el backend.');
+    descargarCsv(`reporte_${tipo.value ?? ''}_ejemplo.csv`, ['Código', 'Indicador', 'Valor', 'Límite', 'Estado'], filas.value.map((f) => [f.codigo, f.indicador, f.valor, f.limite, f.estado]));
+    message.info('Descarga de ejemplo: en RiskWeb el Excel lo genera el backend.');
 }
 onMounted(() => {
     if (route.query.confirmar === '1') generar();

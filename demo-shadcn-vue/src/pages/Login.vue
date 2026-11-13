@@ -17,6 +17,10 @@ const error = ref('');
 const expirada = computed(() => route.query.expirada === '1');
 
 function ingresar() {
+    if (!usuario.value.trim() || !clave.value) {
+        error.value = 'Ingrese usuario y contraseña.';
+        return;
+    }
     if (clave.value !== 'demo') {
         error.value = 'Usuario o contraseña incorrectos (mensaje de ejemplo).';
         return;
@@ -32,7 +36,7 @@ function ingresar() {
             <p class="mt-2 max-w-sm text-white/90">Gestión de riesgos para cooperativas. Imagen genérica de ejemplo.</p>
         </div>
         <div class="flex items-center justify-center p-6">
-            <form class="w-full max-w-sm space-y-5" @submit.prevent="ingresar">
+            <form class="w-full max-w-sm space-y-5" novalidate @submit.prevent="ingresar">
                 <div>
                     <h1 class="text-2xl font-bold">Iniciar sesión</h1>
                     <p class="text-sm text-muted-foreground">{{ EMPRESA }}</p>
@@ -41,12 +45,12 @@ function ingresar() {
                 <Alert v-if="error" variant="destructive"><AlertDescription>{{ error }}</AlertDescription></Alert>
                 <div class="space-y-2">
                     <Label for="usuario">Usuario</Label>
-                    <Input id="usuario" v-model="usuario" autocomplete="username" required />
+                    <Input id="usuario" v-model="usuario" autocomplete="username" />
                 </div>
                 <div class="space-y-2">
                     <Label for="clave">Contraseña</Label>
                     <div class="relative">
-                        <Input id="clave" v-model="clave" :type="ver ? 'text' : 'password'" autocomplete="current-password" required class="pr-10" />
+                        <Input id="clave" v-model="clave" :type="ver ? 'text' : 'password'" autocomplete="current-password" class="pr-10" />
                         <button type="button" class="absolute inset-y-0 right-0 px-3 text-muted-foreground" :aria-label="ver ? 'Ocultar contraseña' : 'Mostrar contraseña'" @click="ver = !ver">
                             <EyeOff v-if="ver" class="h-4 w-4" /><Eye v-else class="h-4 w-4" />
                         </button>

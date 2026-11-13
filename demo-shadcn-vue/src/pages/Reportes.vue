@@ -14,7 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { generarFilas, TIPOS_REPORTE, type FilaReporte } from '@/datos/ejemplo';
-import { fmtFecha, fmtPorcentaje, ultimoDiaMesAnterior } from '@/utils/formato';
+import { descargarCsv, fmtFecha, fmtPorcentaje, ultimoDiaMesAnterior } from '@/utils/formato';
 
 const route = useRoute();
 const corte = ref<Date | null>(ultimoDiaMesAnterior());
@@ -38,7 +38,8 @@ function generar() {
     toast.success('Reporte generado', { description: 'Datos de ejemplo' });
 }
 function exportar() {
-    toast.info('Exportación de ejemplo', { description: 'En RiskWeb el Excel lo genera el backend.' });
+    descargarCsv(`reporte_${tipo.value}_ejemplo.csv`, ['Código', 'Indicador', 'Valor', 'Límite', 'Estado'], filas.value.map((f) => [f.codigo, f.indicador, f.valor, f.limite, f.estado]));
+    toast.info('Descarga de ejemplo', { description: 'En RiskWeb el Excel lo genera el backend.' });
 }
 onMounted(() => {
     if (route.query.confirmar === '1') confirmar.value = true;

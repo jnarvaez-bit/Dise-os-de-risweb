@@ -12,6 +12,10 @@ const error = ref('');
 const expirada = computed(() => route.query.expirada === '1');
 
 function ingresar() {
+    if (!usuario.value.trim() || !clave.value) {
+        error.value = 'Ingrese usuario y contraseña.';
+        return;
+    }
     if (clave.value !== 'demo') {
         error.value = 'Usuario o contraseña incorrectos (mensaje de ejemplo).';
         return;
@@ -27,7 +31,7 @@ function ingresar() {
             <p class="mt-2 max-w-sm text-white/90">Gestión de riesgos para cooperativas. Imagen genérica de ejemplo.</p>
         </div>
         <div class="flex items-center justify-center p-6">
-            <form class="w-full max-w-sm space-y-4" @submit.prevent="ingresar">
+            <form class="w-full max-w-sm space-y-4" novalidate @submit.prevent="ingresar">
                 <div>
                     <h1 class="text-2xl font-bold">Iniciar sesión</h1>
                     <p class="text-sm text-slate-600">{{ EMPRESA }}</p>

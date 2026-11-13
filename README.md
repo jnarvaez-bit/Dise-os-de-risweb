@@ -15,16 +15,21 @@ Fecha: 13/11/2026 (hora de Ecuador). Decisión vigente: **PrimeVue 4.5.5 fijo (M
 
 Las 3 usan Vite 6.4.6 + Vue 3.5.45 + TypeScript 5.8.3 + Tailwind 3.4.17 + vue-router 4.6.4, versiones fijas y `package-lock.json`.
 
-Cada demo tiene las mismas pantallas (rutas con `#`):
+Cada demo tiene las mismas pantallas (rutas con `#`). Menú: **Tablero · Administración (Parámetros, Entidades) · Límites (Reportes, Declaraciones, Parametrización) · Tesorería (Cargar insumos)**. Cada ítem del menú abre su propia pantalla.
 
-1. **Layout**: sidebar plegable con menú de 2 niveles, header con empresa de ejemplo y modo oscuro.
-2. **Filtro de reporte** (`#/reportes`): fecha de corte dd/mm/aaaa + tipo de reporte (LIM007…LIM013, LIF) + Generar.
-3. **Tabla**: 120 filas, paginación 10/25/50, orden, encabezado fijo, números es-EC con 2 decimales, botón «Exportar Excel» ficticio.
-4. **Confirmación** tipo `confirmarAccion` (Aceptar/Cancelar; `#/reportes?confirmar=1` la abre al cargar).
-5. **Cargar insumos** I01/I02 (`#/cargar-insumos`): .zip/.txt, nombre y tamaño, «Validar» simulado (no sube nada).
-6. **KPI** (`#/tablero`): Liquidez, Solvencia, Morosidad, Concentración.
-7. **Semáforo** verde/amarillo/rojo/gris **siempre con texto** (Cumple/Alerta/Incumple/Sin dato).
-8. **Login** (`#/login?expirada=1`): usuario, contraseña con mostrar/ocultar, error de ejemplo y aviso de sesión expirada. Clave de ejemplo: `demo`.
+| # | Pantalla | Ruta | Qué se puede hacer (todo simulado) |
+|---|---|---|---|
+| 1 | Login | `#/login?expirada=1` | Usuario + contraseña (mostrar/ocultar). Vacío → «Ingrese usuario y contraseña.»; clave distinta de `demo` → error; `demo` → Tablero. Aviso de sesión expirada. |
+| 2 | Layout | todas | Menú lateral plegable, modo oscuro, **Cerrar sesión → login**. |
+| 3 | Tablero | `#/tablero` | KPI (Liquidez, Solvencia, Morosidad, Concentración) + semáforo con texto. |
+| 4 | Parámetros | `#/parametros` | Tarjeta **Límites colores L1/L2/L3** + «Editar colores» (valida `#RRGGBB`, «Restaurar valores de ejemplo»; al guardar cambia el semáforo en todo el demo). Tabla de parámetros con «Editar» (valida obligatorio y número con 2 decimales). |
+| 5 | Entidades | `#/entidades` | CRUD: buscar, «Exportar Excel» (CSV), «Nuevo»/«Editar» en modal con validación (código 3–10 mayúsculas/números y único, nombre ≥ 3, RUC 13 dígitos, tipo), «Eliminar» con confirmación. |
+| 6 | Reportes | `#/reportes` | Fecha de corte dd/mm/aaaa + tipo (LIM007…LIM013, LIF) + Generar con confirmación (`?confirmar=1` la abre al cargar); tabla 120 filas, paginación 10/25/50, orden, números es-EC; «Exportar Excel» descarga CSV. |
+| 7 | Declaraciones | `#/declaraciones` | «Nueva declaración» con confirmación; por fila Consultar (modal con detalle), Imprimir (aviso) y Excel (CSV). |
+| 8 | Parametrización | `#/parametrizacion` | Umbrales L1/L2/L3 por indicador: «Nueva definición»/«Editar» con validación (0–100; mayor es mejor L1 ≥ L2 ≥ L3, menor es mejor L1 ≤ L2 ≤ L3). |
+| 9 | Cargar insumos | `#/cargar-insumos` | I01/I02 (.zip/.txt): nombre y tamaño, «Validar» simulado (no sube nada). |
+
+Nada se guarda: cada acción muestra «Ejemplo: no se guardan datos» y al recargar vuelven los datos de ejemplo. «Excel» descarga un CSV de ejemplo (en RiskWeb el Excel real lo hace el backend).
 
 ## Cómo correr un demo
 
@@ -40,18 +45,38 @@ Requisitos: Node 20.19+ (probado con Node 24.22.1).
 
 ## Resultado del build (13/11/2026)
 
-| Demo | Build | dist total | JS (gzip) | CSS | Fuentes |
-|---|---|---|---|---|---|
-| PrimeVue 4 | ✅ sin errores TS | 1,7 MB | 1016 KB (240 KB) | 22 KB | 618 KB (primeicons) |
-| shadcn-vue | ✅ sin errores TS | 528 KB | 439 KB (140 KB) | 55 KB | — |
-| Naive UI | ✅ sin errores TS | 1,0 MB | 970 KB (282 KB) | 8 KB (+ CSS-in-JS) | — |
+| Demo | `npm run build` | dist total |
+|---|---|---|
+| PrimeVue 4 | ✅ sin errores TS | 1,8 MB (incluye 618 KB de primeicons) |
+| shadcn-vue | ✅ sin errores TS | 624 KB |
+| Naive UI | ✅ sin errores TS | 1,1 MB |
 
-`npm audit --omit=dev`: 0 vulnerabilidades en los 3. Consola del navegador limpia en las 5 capturas de cada demo.
+`npm audit --omit=dev`: 0 vulnerabilidades en los 3.
+
+## Prueba automática de botones (Playwright)
+
+```bash
+cd scripts && npm ci
+(cd ../demo-primevue4 && npm run build)   # igual para los otros 2: la prueba usa dist/
+npm run test        # node test-botones.mjs [demo...]  -> docs/prueba-botones.md y .json
+npm run capturas    # node capturas.mjs                -> docs/capturas/*.png
+```
+
+Usa `playwright-core` 1.65.0 con Google Chrome del sistema (`/usr/bin/google-chrome` o variable `CHROME_PATH`). Para cada demo: visita las 8 rutas, hace clic en cada botón/enlace/ítem de menú/combo/encabezado ordenable visible y, si se abre un modal, en cada botón del modal. **Falla** si un clic no tiene efecto visible (cambio en la pantalla, navegación, descarga, modal nuevo o selector de archivo) o si hay errores en la consola.
+
+Resultado (13/11/2026, hora de Ecuador) — detalle por botón en `docs/prueba-botones.md`:
+
+| Demo | Resultado | Rutas | Clics OK | Fallas | Deshabilitados* | Errores consola |
+|---|---|---|---|---|---|---|
+| PrimeVue 4 | ✅ PASA | 8 | 117 | 0 | 2 | 0 |
+| shadcn-vue | ✅ PASA | 8 | 116 | 0 | 16 | 0 |
+| Naive UI | ✅ PASA | 8 | 119 | 0 | 4 | 0 |
+
+\* Deshabilitados a propósito (p. ej. «Página anterior» en la página 1, «Validar» sin archivo).
 
 ## Capturas
 
-En `docs/capturas/` (1366×900): `<demo>_login.png`, `_tablero.png`, `_reportes.png`, `_confirmacion.png`, `_cargar-insumos.png`.
-Para regenerarlas: `(cd scripts && npm i --no-save puppeteer-core@24)` y luego `scripts/capturar.sh demo-primevue4 4301` (requiere Google Chrome y el `dist/` construido).
+En `docs/capturas/` (1366×900), por demo (`<demo>` = `demo-primevue4`, `demo-shadcn-vue`, `demo-naiveui`): `_login`, `_tablero`, `_parametros`, `_parametros-colores`, `_entidades`, `_entidades-validacion`, `_reportes`, `_confirmacion`, `_declaraciones`, `_parametrizacion`, `_cargar-insumos` (`.png`). Se regeneran con `npm run capturas` en `scripts/`.
 
 ## Hallazgos
 
@@ -61,7 +86,7 @@ Para regenerarlas: `(cd scripts && npm i --no-save puppeteer-core@24)` y luego `
 
 ## Reglas
 
-- PROHIBIDO git push salvo que Jhon lo haga/autorice. Repo creado solo localmente.
+- git push solo con autorización de Jhon y solo la rama `demos-ui-2026-11-13`.
 - No copiar nada de aquí a RiskWeb sin pasar por Molino/pruebas primero.
 
 ## Checklist de QA (de `04_Opiniones_equipo_y_checklist.md`)

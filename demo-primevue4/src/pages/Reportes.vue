@@ -12,7 +12,7 @@ import { useRoute } from 'vue-router';
 import Rotulo from '@/components/Rotulo.vue';
 import SemaforoBadge from '@/components/SemaforoBadge.vue';
 import { generarFilas, TIPOS_REPORTE, type FilaReporte } from '@/datos/ejemplo';
-import { fmtFecha, fmtPorcentaje, ultimoDiaMesAnterior } from '@/utils/formato';
+import { descargarCsv, fmtFecha, fmtPorcentaje, ultimoDiaMesAnterior } from '@/utils/formato';
 
 const route = useRoute();
 const confirm = useConfirm();
@@ -42,7 +42,8 @@ function generar() {
 }
 
 function exportar() {
-    toast.add({ severity: 'info', summary: 'Exportación de ejemplo', detail: 'En RiskWeb el Excel lo genera el backend.', life: 4000 });
+    descargarCsv(`reporte_${tipo.value}_ejemplo.csv`, ['Código', 'Indicador', 'Valor', 'Límite', 'Estado'], filas.value.map((f) => [f.codigo, f.indicador, f.valor, f.limite, f.estado]));
+    toast.add({ severity: 'info', summary: 'Descarga de ejemplo', detail: 'En RiskWeb el Excel lo genera el backend.', life: 4000 });
 }
 // ?confirmar=1 abre el modal al cargar (solo para la captura del demo).
 onMounted(() => {

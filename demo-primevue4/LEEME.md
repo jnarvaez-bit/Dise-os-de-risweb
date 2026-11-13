@@ -16,6 +16,10 @@ npm run build
 | Tablero (KPI + semáforo) | `#/tablero` | Card, Tag |
 | Reportes (filtro + tabla + confirmación + Excel) | `#/reportes` | DatePicker (dd/mm/aaaa), Select filter, DataTable + Column (paginator, sortable, scrollable, frozen), ConfirmDialog, Toast |
 | Cargar insumos I01/I02 | `#/cargar-insumos` | FileUpload mode="basic" (sin subir), Card, Message, Toast |
+| Parámetros | `#/parametros` | Card, DataTable, Dialog, InputText, Tag, Toast — tarjeta «Límites colores (L1/L2/L3)» + editor con validación #RRGGBB |
+| Entidades | `#/entidades` | DataTable (paginación, orden), InputText (buscar), Dialog (crear/editar con validación), ToggleSwitch, ConfirmDialog (eliminar), Toast |
+| Declaraciones | `#/declaraciones` | DatePicker, Select, DataTable, ConfirmDialog (nueva), Dialog (consultar), Toast (imprimir), descarga CSV (Excel) |
+| Parametrización | `#/parametrizacion` | DataTable, Dialog, InputText, InputNumber (es-EC), Select, Message (regla L1/L2/L3) |
 
 `#/reportes?confirmar=1` abre el modal al cargar (solo para la captura).
 
@@ -25,6 +29,9 @@ npm run build
 - Plugin `tailwindcss-primeui` (versión JS para Tailwind 3).
 
 ## Qué faltó / notas
-- El botón Excel es ficticio (en RiskWeb lo hace el backend).
+- «Excel» descarga un CSV de ejemplo (en RiskWeb el Excel real lo hace el backend).
 - Se importa componente por componente; no se usó `unplugin-vue-components`.
 - No se configuró nonce de CSP (en RiskWeb: `csp: { nonce }` + `Vite::useCspNonce()`).
+
+## Botones
+Todos los botones hacen algo visible: abren modal, muestran aviso «Ejemplo: no se guardan datos», descargan un CSV de ejemplo o navegan. «Cerrar sesión» vuelve al login. Nada se guarda: al recargar vuelven los datos de ejemplo. Prueba automática: `../scripts/test-botones.mjs` (ver README raíz).

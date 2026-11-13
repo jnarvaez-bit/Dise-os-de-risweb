@@ -30,3 +30,17 @@ export function ultimoDiaMesAnterior(): Date {
 export function alternarOscuro(): boolean {
     return document.documentElement.classList.toggle('dark');
 }
+
+// Descarga simulada: genera un CSV de ejemplo en el navegador (en RiskWeb el Excel lo hace el backend).
+export function descargarCsv(nombre: string, encabezados: string[], filas: (string | number | null)[][]): void {
+    const esc = (v: string | number | null) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+    const csv = ['DATOS DE EJEMPLO', encabezados.map(esc).join(';'), ...filas.map((f) => f.map(esc).join(';'))].join('\r\n');
+    const url = URL.createObjectURL(new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = nombre;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+}

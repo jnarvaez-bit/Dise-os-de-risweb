@@ -1,0 +1,2673 @@
+[
+  {
+    "demo": "demo-primevue4",
+    "rutas": 8,
+    "resultados": [
+      {
+        "ruta": "/login",
+        "nivel": "pantalla",
+        "etiqueta": "Ingresar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Tablero",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Administración",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Parámetros",
+        "estado": "OK",
+        "efecto": "dom(229), navega /parametros"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Entidades",
+        "estado": "OK",
+        "efecto": "dom(547), navega /entidades"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Límites",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Reportes",
+        "estado": "OK",
+        "efecto": "dom(491), navega /reportes"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Declaraciones",
+        "estado": "OK",
+        "efecto": "dom(593), navega /declaraciones"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Parametrización",
+        "estado": "OK",
+        "efecto": "dom(416), navega /parametrizacion"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Tesorería",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Cargar insumos",
+        "estado": "OK",
+        "efecto": "dom(49), navega /cargar-insumos"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Plegar menú",
+        "estado": "OK",
+        "efecto": "dom(1)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Modo oscuro",
+        "estado": "OK",
+        "efecto": "dom(2)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Cerrar sesión",
+        "estado": "OK",
+        "efecto": "dom(34), navega /login"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar colores",
+        "estado": "OK",
+        "efecto": "dom(39), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Restaurar valores de ejemplo",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar param_limites",
+        "estado": "OK",
+        "efecto": "dom(35), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar dias_alerta_corte",
+        "estado": "OK",
+        "efecto": "dom(35), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Exportar Excel",
+        "estado": "OK",
+        "efecto": "dom(15), descarga"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Nuevo",
+        "estado": "OK",
+        "efecto": "dom(48), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Seleccione",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "p-toggleswitch-input",
+        "estado": "OK",
+        "efecto": "dom(7), cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(22)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Código",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Nombre",
+        "estado": "OK",
+        "efecto": "dom(128)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Tipo",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Editar Banco Ejemplo Uno S.A.",
+        "estado": "OK",
+        "efecto": "dom(49), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Banco",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "p-toggleswitch-input",
+        "estado": "OK",
+        "efecto": "dom(7), cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(42)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Eliminar Banco Ejemplo Uno S.A.",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar Banco Ejemplo Uno S.A.»",
+        "etiqueta": "Eliminar",
+        "estado": "OK",
+        "efecto": "dom(118)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Editar Banco Ejemplo Dos S.A.",
+        "estado": "OK",
+        "efecto": "dom(49), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Banco",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "p-toggleswitch-input",
+        "estado": "OK",
+        "efecto": "dom(7), cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(42)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Eliminar Banco Ejemplo Dos S.A.",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar Banco Ejemplo Dos S.A.»",
+        "etiqueta": "Eliminar",
+        "estado": "OK",
+        "efecto": "dom(112)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Primera página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Página anterior",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Página 1",
+        "estado": "actual",
+        "efecto": "página/opción ya seleccionada"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Página 2",
+        "estado": "OK",
+        "efecto": "dom(131)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Página siguiente",
+        "estado": "OK",
+        "efecto": "dom(132)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Última página",
+        "estado": "OK",
+        "efecto": "dom(132)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Filas por página",
+        "estado": "OK",
+        "efecto": "dom(25)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "p-inputtext p-component p-filled p-inputtext-fluid p-datepicker-input",
+        "estado": "OK",
+        "efecto": "dom(98)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Elegir fecha",
+        "estado": "OK",
+        "efecto": "dom(100)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
+        "estado": "OK",
+        "efecto": "dom(49)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Generar",
+        "estado": "OK",
+        "efecto": "dom(24), abre modal"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «Generar»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «Generar»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «Generar»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(85)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Exportar Excel",
+        "estado": "OK",
+        "efecto": "dom(15), descarga"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Código",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Indicador",
+        "estado": "OK",
+        "efecto": "dom(225)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Valor",
+        "estado": "OK",
+        "efecto": "dom(206)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Límite",
+        "estado": "OK",
+        "efecto": "dom(205)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Estado",
+        "estado": "OK",
+        "efecto": "dom(185)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "p-inputtext p-component p-filled p-inputtext-fluid p-datepicker-input",
+        "estado": "OK",
+        "efecto": "dom(98)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Elegir fecha",
+        "estado": "OK",
+        "efecto": "dom(100)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
+        "estado": "OK",
+        "efecto": "dom(49)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Nueva declaración",
+        "estado": "OK",
+        "efecto": "dom(24), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(124)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Corte",
+        "estado": "OK",
+        "efecto": "dom(160)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Tipo",
+        "estado": "OK",
+        "efecto": "dom(88)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Consultar LIM007",
+        "estado": "OK",
+        "efecto": "dom(256), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Imprimir",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Excel",
+        "estado": "OK",
+        "efecto": "dom(15), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Imprimir LIM007",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Excel LIM007",
+        "estado": "OK",
+        "efecto": "dom(16), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Consultar LIM008",
+        "estado": "OK",
+        "efecto": "dom(256), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Imprimir",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Excel",
+        "estado": "OK",
+        "efecto": "dom(15), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Imprimir LIM008",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Excel LIM008",
+        "estado": "OK",
+        "efecto": "dom(16), descarga"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Nueva definición",
+        "estado": "OK",
+        "efecto": "dom(64), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(33)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Código",
+        "estado": "OK",
+        "efecto": "dom(70)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Editar LIQ_PRIMERA_LINEA",
+        "estado": "OK",
+        "efecto": "dom(65), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(33)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Editar LIQ_SEGUNDA_LINEA",
+        "estado": "OK",
+        "efecto": "dom(65), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(33)"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Elegir archivo",
+        "estado": "OK",
+        "efecto": "selector de archivo"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Validar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Elegir archivo",
+        "estado": "OK",
+        "efecto": "selector de archivo"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Validar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      }
+    ],
+    "fallas": [],
+    "errores": [],
+    "avisos": [],
+    "ok": true,
+    "segundos": 264
+  },
+  {
+    "demo": "demo-shadcn-vue",
+    "rutas": 8,
+    "resultados": [
+      {
+        "ruta": "/login",
+        "nivel": "pantalla",
+        "etiqueta": "Mostrar contraseña",
+        "estado": "OK",
+        "efecto": "dom(1)"
+      },
+      {
+        "ruta": "/login",
+        "nivel": "pantalla",
+        "etiqueta": "Ingresar",
+        "estado": "OK",
+        "efecto": "dom(2)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Tablero",
+        "estado": "actual",
+        "efecto": "página/opción ya seleccionada"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Parámetros",
+        "estado": "OK",
+        "efecto": "dom(33), navega /parametros"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Entidades",
+        "estado": "OK",
+        "efecto": "dom(37), navega /entidades"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Reportes",
+        "estado": "OK",
+        "efecto": "dom(47), navega /reportes"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Declaraciones",
+        "estado": "OK",
+        "efecto": "dom(61), navega /declaraciones"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Parametrización",
+        "estado": "OK",
+        "efecto": "dom(26), navega /parametrizacion"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Cargar insumos",
+        "estado": "OK",
+        "efecto": "dom(10), navega /cargar-insumos"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Plegar menú",
+        "estado": "OK",
+        "efecto": "dom(2)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Modo oscuro",
+        "estado": "OK",
+        "efecto": "dom(1)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Cerrar sesión",
+        "estado": "OK",
+        "efecto": "dom(9), navega /login"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar colores",
+        "estado": "OK",
+        "efecto": "dom(11), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Restaurar valores de ejemplo",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Clave",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Descripción",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Tipo",
+        "estado": "OK",
+        "efecto": "dom(14)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar param_limites",
+        "estado": "OK",
+        "efecto": "dom(11), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar dias_alerta_corte",
+        "estado": "OK",
+        "efecto": "dom(11), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Primera página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Página anterior",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Página siguiente",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Última página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Exportar Excel",
+        "estado": "OK",
+        "efecto": "dom(8), descarga"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Nuevo",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Seleccione",
+        "estado": "OK",
+        "efecto": "dom(21)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Activo",
+        "estado": "OK",
+        "efecto": "cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Código",
+        "estado": "OK",
+        "efecto": "dom(8)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Nombre",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Tipo",
+        "estado": "OK",
+        "efecto": "dom(8)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Estado",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Editar BEJ01",
+        "estado": "OK",
+        "efecto": "dom(27), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Banco",
+        "estado": "OK",
+        "efecto": "dom(21)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Activo",
+        "estado": "OK",
+        "efecto": "cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(34)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Eliminar BEJ01",
+        "estado": "OK",
+        "efecto": "dom(11), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ01»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ01»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(89)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Editar BEJ02",
+        "estado": "OK",
+        "efecto": "dom(27), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Banco",
+        "estado": "OK",
+        "efecto": "dom(21)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Activo",
+        "estado": "OK",
+        "efecto": "cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(34)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Eliminar BEJ02",
+        "estado": "OK",
+        "efecto": "dom(11), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ02»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ02»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(84)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Primera página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Página anterior",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Página siguiente",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Última página",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "31/10/2026",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
+        "estado": "OK",
+        "efecto": "dom(22)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Generar",
+        "estado": "OK",
+        "efecto": "dom(13), abre modal"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «Generar»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «Generar»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(60)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Exportar Excel",
+        "estado": "OK",
+        "efecto": "dom(8), descarga"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Código",
+        "estado": "OK",
+        "efecto": "dom(8)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Indicador",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Valor",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Límite",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Estado",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Primera página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Página anterior",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Página siguiente",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Última página",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "31/10/2026",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
+        "estado": "OK",
+        "efecto": "dom(22)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Nueva declaración",
+        "estado": "OK",
+        "efecto": "dom(13), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(68)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Corte",
+        "estado": "OK",
+        "efecto": "dom(8)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Tipo",
+        "estado": "OK",
+        "efecto": "dom(10)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Estado",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Consultar LIM007",
+        "estado": "OK",
+        "efecto": "dom(13), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Imprimir",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Excel",
+        "estado": "OK",
+        "efecto": "dom(8), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Imprimir LIM007",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Excel LIM007",
+        "estado": "OK",
+        "efecto": "dom(8), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Consultar LIM008",
+        "estado": "OK",
+        "efecto": "dom(13), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Imprimir",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Excel",
+        "estado": "OK",
+        "efecto": "dom(8), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Imprimir LIM008",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Excel LIM008",
+        "estado": "OK",
+        "efecto": "dom(8), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Primera página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Página anterior",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Página siguiente",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Última página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Nueva definición",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(21)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(15)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Código",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Nombre",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por Sentido",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por L1",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por L2",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Ordenar por L3",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Editar LIQ_PRIMERA_LINEA",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(21)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(34)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Editar LIQ_SEGUNDA_LINEA",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(21)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(34)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Close",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Primera página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Página anterior",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Página siguiente",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Última página",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Validar",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Validar",
+        "estado": "OK",
+        "efecto": "dom(6)"
+      }
+    ],
+    "fallas": [],
+    "errores": [],
+    "avisos": [],
+    "ok": true,
+    "segundos": 254
+  },
+  {
+    "demo": "demo-naiveui",
+    "rutas": 8,
+    "resultados": [
+      {
+        "ruta": "/login",
+        "nivel": "pantalla",
+        "etiqueta": "Ingresar",
+        "estado": "OK",
+        "efecto": "dom(3)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Tablero",
+        "estado": "actual",
+        "efecto": "página/opción ya seleccionada"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Administración",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Parámetros",
+        "estado": "OK",
+        "efecto": "dom(16), navega /parametros"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Entidades",
+        "estado": "OK",
+        "efecto": "dom(25), navega /entidades"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Límites",
+        "estado": "OK",
+        "efecto": "dom(13)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Reportes",
+        "estado": "OK",
+        "efecto": "dom(28), navega /reportes"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Declaraciones",
+        "estado": "OK",
+        "efecto": "dom(32), navega /declaraciones"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Parametrización",
+        "estado": "OK",
+        "efecto": "dom(18), navega /parametrizacion"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Tesorería",
+        "estado": "OK",
+        "efecto": "dom(12)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Plegar menú",
+        "estado": "OK",
+        "efecto": "dom(35)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Modo oscuro",
+        "estado": "OK",
+        "efecto": "dom(249)"
+      },
+      {
+        "ruta": "/tablero",
+        "nivel": "pantalla",
+        "etiqueta": "Cerrar sesión",
+        "estado": "OK",
+        "efecto": "dom(8), navega /login"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar colores",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Restaurar valores de ejemplo",
+        "estado": "OK",
+        "efecto": "dom(22)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar colores»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(44)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar param_limites",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(25)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar param_limites»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(42)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "pantalla",
+        "etiqueta": "Editar dias_alerta_corte",
+        "estado": "OK",
+        "efecto": "dom(25), abre modal"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(25)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/parametros",
+        "nivel": "modal de «Editar dias_alerta_corte»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(42)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Exportar Excel",
+        "estado": "OK",
+        "efecto": "dom(18), descarga"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Nuevo",
+        "estado": "OK",
+        "efecto": "dom(28), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "loading",
+        "estado": "OK",
+        "efecto": "dom(45)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "n-switch n-switch--active n-switch--round n-switch--rubber-band",
+        "estado": "OK",
+        "efecto": "dom(3), cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Nuevo»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(38)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Código",
+        "estado": "OK",
+        "efecto": "dom(44)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Nombre",
+        "estado": "OK",
+        "efecto": "dom(38)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Tipo",
+        "estado": "OK",
+        "efecto": "dom(32)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Editar BEJ01",
+        "estado": "OK",
+        "efecto": "dom(28), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Banco",
+        "estado": "OK",
+        "efecto": "dom(45)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "n-switch n-switch--active n-switch--round n-switch--rubber-band",
+        "estado": "OK",
+        "efecto": "dom(3), cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ01»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(45)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Eliminar BEJ01",
+        "estado": "OK",
+        "efecto": "dom(21), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ01»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ01»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ01»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(59)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Editar BEJ02",
+        "estado": "OK",
+        "efecto": "dom(28), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(27)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Banco",
+        "estado": "OK",
+        "efecto": "dom(45)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "n-switch n-switch--active n-switch--round n-switch--rubber-band",
+        "estado": "OK",
+        "efecto": "dom(3), cambia su estado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Editar BEJ02»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(45)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "Eliminar BEJ02",
+        "estado": "OK",
+        "efecto": "dom(21), abre modal"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ02»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ02»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "modal de «Eliminar BEJ02»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(58)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item n-pagination-item--button n-pagination-item--disable",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "1",
+        "estado": "actual",
+        "efecto": "página/opción ya seleccionada"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "2",
+        "estado": "OK",
+        "efecto": "dom(17)"
+      },
+      {
+        "ruta": "/entidades",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item n-pagination-item--button",
+        "estado": "OK",
+        "efecto": "dom(17)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
+        "estado": "OK",
+        "efecto": "dom(54)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "▶ Generar",
+        "estado": "OK",
+        "efecto": "dom(22), abre modal"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «▶ Generar»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «▶ Generar»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "modal de «▶ Generar»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(113)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Exportar Excel",
+        "estado": "OK",
+        "efecto": "dom(18), descarga"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Código",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Indicador",
+        "estado": "OK",
+        "efecto": "dom(19)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Valor",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Límite",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "Estado",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item n-pagination-item--button n-pagination-item--disable",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "1",
+        "estado": "actual",
+        "efecto": "página/opción ya seleccionada"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "2",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "3",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "4",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "5",
+        "estado": "OK",
+        "efecto": "dom(24)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "6",
+        "estado": "OK",
+        "efecto": "dom(32)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "7",
+        "estado": "OK",
+        "efecto": "dom(34)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item",
+        "estado": "OK",
+        "efecto": "dom(44)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "12",
+        "estado": "OK",
+        "efecto": "dom(43)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item n-pagination-item--button",
+        "estado": "OK",
+        "efecto": "dom(25)"
+      },
+      {
+        "ruta": "/reportes",
+        "nivel": "pantalla",
+        "etiqueta": "10 / página",
+        "estado": "OK",
+        "efecto": "dom(28)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "LIM007 · Liquidez estructural (ejemplo)",
+        "estado": "OK",
+        "efecto": "dom(54)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Nueva declaración",
+        "estado": "OK",
+        "efecto": "dom(21), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(26)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Nueva declaración»",
+        "etiqueta": "Aceptar",
+        "estado": "OK",
+        "efecto": "dom(51)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Corte",
+        "estado": "OK",
+        "efecto": "dom(8)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Tipo",
+        "estado": "OK",
+        "efecto": "dom(20)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Consultar LIM007",
+        "estado": "OK",
+        "efecto": "dom(24), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(23)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Imprimir",
+        "estado": "OK",
+        "efecto": "dom(17)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Excel",
+        "estado": "OK",
+        "efecto": "dom(19), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM007»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(23)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Imprimir LIM007",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Excel LIM007",
+        "estado": "OK",
+        "efecto": "dom(18), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Consultar LIM008",
+        "estado": "OK",
+        "efecto": "dom(24), abre modal"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(23)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Imprimir",
+        "estado": "OK",
+        "efecto": "dom(17)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Excel",
+        "estado": "OK",
+        "efecto": "dom(19), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "modal de «Consultar LIM008»",
+        "etiqueta": "Cerrar",
+        "estado": "OK",
+        "efecto": "dom(23)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Imprimir LIM008",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "Excel LIM008",
+        "estado": "OK",
+        "efecto": "dom(18), descarga"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item n-pagination-item--button n-pagination-item--disable",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "1",
+        "estado": "actual",
+        "efecto": "página/opción ya seleccionada"
+      },
+      {
+        "ruta": "/declaraciones",
+        "nivel": "pantalla",
+        "etiqueta": "n-pagination-item n-pagination-item--button n-pagination-item--disable",
+        "estado": "deshabilitado"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Nueva definición",
+        "estado": "OK",
+        "efecto": "dom(30), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(29)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(39)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(30)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Nueva definición»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(48)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Código",
+        "estado": "OK",
+        "efecto": "dom(36)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Editar LIQ_PRIMERA_LINEA",
+        "estado": "OK",
+        "efecto": "dom(30), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(29)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(39)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(30)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_PRIMERA_LINEA»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(46)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "pantalla",
+        "etiqueta": "Editar LIQ_SEGUNDA_LINEA",
+        "estado": "OK",
+        "efecto": "dom(30), abre modal"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "close",
+        "estado": "OK",
+        "efecto": "dom(29)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Mayor es mejor",
+        "estado": "OK",
+        "efecto": "dom(39)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Cancelar",
+        "estado": "OK",
+        "efecto": "dom(30)"
+      },
+      {
+        "ruta": "/parametrizacion",
+        "nivel": "modal de «Editar LIQ_SEGUNDA_LINEA»",
+        "etiqueta": "Guardar",
+        "estado": "OK",
+        "efecto": "dom(46)"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Elegir archivo",
+        "estado": "OK",
+        "efecto": "selector de archivo"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "✓ Validar",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "Elegir archivo",
+        "estado": "OK",
+        "efecto": "selector de archivo"
+      },
+      {
+        "ruta": "/cargar-insumos",
+        "nivel": "pantalla",
+        "etiqueta": "✓ Validar",
+        "estado": "OK",
+        "efecto": "dom(16)"
+      }
+    ],
+    "fallas": [],
+    "errores": [],
+    "avisos": [],
+    "ok": true,
+    "segundos": 273
+  }
+]

@@ -28,7 +28,7 @@ const oscuro = ref(false);
                         <SidebarGroupContent>
                             <SidebarMenu>
                                 <SidebarMenuItem v-for="h in g.hijos" :key="h.label">
-                                    <SidebarMenuButton as-child :is-active="route.path === h.to && h.label !== 'Declaraciones' && h.label !== 'Parámetros' && h.label !== 'Entidades' && h.label !== 'Parametrización'">
+                                    <SidebarMenuButton as-child :is-active="route.path === h.to">
                                         <RouterLink :to="h.to ?? '/'">{{ h.label }}</RouterLink>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>

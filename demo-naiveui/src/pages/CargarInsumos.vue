@@ -7,9 +7,12 @@ import { fmtTamano } from '@/utils/formato';
 
 const message = useMessage();
 const archivos = reactive<Record<string, File | null>>({ I01: null, I02: null });
+// Lista controlada con solo el último archivo: así se puede volver a elegir otro (con :max="1" el botón quedaba bloqueado).
+const listas = reactive<Record<string, UploadFileInfo[]>>({ I01: [], I02: [] });
 
 function cambiar(codigo: string, lista: UploadFileInfo[]) {
-    archivos[codigo] = lista[0]?.file ?? null;
+    listas[codigo] = lista.slice(-1);
+    archivos[codigo] = listas[codigo][0]?.file ?? null;
 }
 function validar(codigo: string) {
     // Simulación: no se sube nada.
@@ -27,7 +30,7 @@ function validar(codigo: string) {
         <div class="grid gap-4 md:grid-cols-2">
             <NCard v-for="i in INSUMOS" :key="i.codigo" :title="i.nombre" size="small">
                 <p class="mb-3 text-sm opacity-70">Formatos: .zip o .txt</p>
-                <NUpload :default-upload="false" :max="1" accept=".zip,.txt" :show-file-list="false" @update:file-list="cambiar(i.codigo, $event)">
+                <NUpload :default-upload="false" :file-list="listas[i.codigo]" accept=".zip,.txt" :show-file-list="false" @update:file-list="cambiar(i.codigo, $event)">
                     <NButton>Elegir archivo</NButton>
                 </NUpload>
                 <p class="my-3 text-sm" aria-live="polite">

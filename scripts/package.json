@@ -1,0 +1,13 @@
+{
+    "name": "disenos-riskweb-scripts",
+    "private": true,
+    "type": "module",
+    "description": "Pruebas automáticas de botones y capturas de los 3 demos (Playwright + Google Chrome del sistema).",
+    "scripts": {
+        "test": "node test-botones.mjs",
+        "capturas": "node capturas.mjs"
+    },
+    "devDependencies": {
+        "playwright-core": "1.65.0"
+    }
+}

@@ -18,6 +18,10 @@ Componentes generados con `npx shadcn-vue@1.0.3 init -d` y `add` (sidebar, butto
 | Tablero | `#/tablero` | Card, Badge (`RwSemaforo`) |
 | Reportes | `#/reportes` | `RwDatePicker` (Popover + Calendar), Select, `RwDataTable` (TanStack Table 8.21.3 + Table), `RwConfirmar` (AlertDialog), Sonner |
 | Cargar insumos | `#/cargar-insumos` | Input type=file, Card, Alert, Sonner |
+| Parámetros | `#/parametros` | Card, `RwDataTable`, Dialog, Input, Badge, Sonner — tarjeta «Límites colores (L1/L2/L3)» + editor con validación #RRGGBB |
+| Entidades | `#/entidades` | `RwDataTable`, Input (buscar), Dialog (crear/editar con validación), Select, Switch, `RwConfirmar` (eliminar), Sonner |
+| Declaraciones | `#/declaraciones` | `RwDatePicker`, Select, `RwDataTable`, `RwConfirmar` (nueva), Dialog + Table (consultar), Sonner (imprimir), descarga CSV (Excel) |
+| Parametrización | `#/parametrizacion` | `RwDataTable`, Dialog, Input number, Select, Alert (regla L1/L2/L3) |
 
 Wrappers propios en `src/components/rw/`.
 
@@ -28,4 +32,7 @@ Además el CLI instaló `lucide-vue-next@1.0.0` (deprecado) y `tailwind-merge@3`
 ## Qué faltó
 - Select sin búsqueda (para eso: Combobox/Command, no incluido).
 - La tabla (paginación, orden, encabezado fijo) hubo que armarla a mano.
-- Excel ficticio.
+- «Excel» descarga un CSV de ejemplo (en RiskWeb lo hace el backend).
+
+## Botones
+Todos los botones hacen algo visible: abren modal, muestran aviso «Ejemplo: no se guardan datos», descargan un CSV de ejemplo o navegan. «Cerrar sesión» vuelve al login. Nada se guarda: al recargar vuelven los datos de ejemplo. Prueba automática: `../scripts/test-botones.mjs` (ver README raíz).
