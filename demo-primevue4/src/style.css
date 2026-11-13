@@ -1,0 +1,16 @@
+/* Tailwind 3 no usa @layer nativo: se declara el orden para que PrimeVue quede entre base y utilities. */
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+html,
+body {
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
